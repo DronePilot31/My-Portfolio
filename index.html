@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/flickity.css">
     <!-- CSS Propio -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7b5fb2de65.js" crossorigin="anonymous" async=""></script>
 </head>
 <body>
     <div class="marco">
@@ -17,19 +18,18 @@
                 <h6>Daniel DIAZ-PACHE</h6>
             </a>
             <!-- bnt-menu-mob -->
-            <button class="btn-menu-mob">
+            <button class="btn-menu-mob" id="btnMenuMob">
                 <i class="fa fa-bars"></i>
             </button>
             <!-- fin btn.menu-mob -->
             <nav class="menu-desk">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" class="link" data-sec="0">Home</a>
+                <a href="#about" class="link" data-sec="1">About</a>
+                <a href="#services" class="link" data-sec="2">Services</a>
+                <a href="#portfolio" class="link" data-sec="3">Portfolio</a>
+                <a href="#contact" class="link" data-sec="4">Contact</a>
             </nav>
         </header>
-    </div>
 <!-- fin header -->
 <!-- seccion 1 -->   
     <section class="s1">
@@ -37,23 +37,25 @@
          <source src="video/drones.mp4" type="video/mp4">
         </video>
         <article>
-        <h6 id="home">Hello, my name is</h6>
-        <h5>Daniel DIAZ-PACHE</h5>
-        <h5>and I'm <b>Web designer</b> and <b> Drone Pilot</b></h5>
+            <h6 id="home">Hello, my name is</h6>
+            <h5>Daniel DIAZ-PACHE</h5>
+            <h5>and I'm <b>Web designer</b> and <b> Drone Pilot</b></h5>
         </article>
     </section>
 <!-- seccion 2 -->
- <section class="s2">
+ <section class="s2 slide-up">
     <h4 id="about"><b>About</b></h4>
-    <article>
+    <article class="articles2">
         <img src="img/dani.jpeg" alt="Daniel">
-        <p>From a very young age, already a fan of <b>the new technolgie era</b> and always asking myself questions about how they work <b>(mobiles, computers, drones...).</b>
+        <p class="ipadp">From a very young age, already a fan of <b>the new technolgie era</b> and always asking myself questions about how they work <b>(mobiles, computers, drones...).</b>
         In my spare time I love to fly drones and edit the videos I upload to <a href="https://youtube.com/channel/UCvZmi_HUOH3VG_IH5Dx8xDw">Youtube</a>.   
-        I have always had a clear idea of what to do. The beginning of my course as a <b> web designer</b>, and with a dream of finishing my degree as a software engineer with<b> cybersecurity</b> specialization, have made me a person with <b> clear goals</b>, every day I wake up with the desire to learn new topics, this makes me a constant person, curious and without fear of facing new challenges. </p>
+        I have always had a clear idea of what to do. The beginning of my course as a <b> web designer</b>, and with a dream of finishing my degree as a software engineer with<b> cybersecurity</b> specialization, have made me a person with <b> clear goals</b>, every day I wake up with the desire to learn new topics, this makes me a constant person, curious and without fear of facing new challenges. </p>   
     </article>
+    <p class="pi"><i>"I will never stop until my people close to me, are proud of me, this is my only motivation, which makes me a serious and responsible person."</i></p>
+    <a class="pdf" href="pdf/Profile.pdf">View my CV</a> 
 </section>
 <!-- seccion 3 -->
-<section class="s3">
+<section class="s3 slide-up">
     <h4 id="services"><b>Services</b></h4>
     <article class="s3-content">
         <div>
@@ -94,35 +96,79 @@
     </article>
 </section>
 <!-- seccion 4  -->
-<section class="s4">
-<!-- carousel 1 -->
-<div class="main-carousel">
-    <div class="carousel-cell">
-        <img src="img/porfolio.png" alt="">
-        <h5>My Portfolio</h5>
-        <a href="#">Ver codigo del Portfolio</a>
-    </div>
-    <div class="carousel-cell">
-        <img src="img/Project.jpg" alt="fasfa">
-        <h5>My Project</h5>
-        <a href="#">Ver mas</a>
-    </div>
-    <div class="carousel-cell">
-        <img src="img/drone.jpg" alt="fasfa">
-        <h5>Drone Works</h5>
-        <a href="https://vt.tiktok.com/ZSdGyJ9pq/">Ver videos</a>
-    </div>
+<section class="s4 slide-up">
+    <h4 id="portfolio"><b>Portfolio</b></h4>
+<!-- carousel -->
+    <div class="main-carousel">
+        <!-- <a href="mettre le code" class="carousel-cell"> -->
+        <img src="img/porfolio.png" alt="portfolio">
+        <p class="sub1"><b>My Portfolio Code</b></p></a>
+
+        <a href="project/merciful/index.html" class="carousel-cell"> 
+        <img class="imgproyect" src="img/Project1.jpg" alt="proyects">
+        <p class="sub1"><b>My Projects and their codes (more coming soon...)</b></p></a>
+    
+        <a href="https://vt.tiktok.com/ZSdGyJ9pq/"class="carousel-cell"> 
+        <img src="img/drone1.jpg" alt="dronevideos">
+        <p class="sub1"><b>My Videos</b></p></a>
   </div>
 </section>
 <!-- fin seccion 4 -->
+<!-- seccion 5 -->
+<section class="s5 slide-up">
+    <h5 id="contact"><b>Contact</b></h5>
+    <p class="p1">Contact me if you want to work together:</p>
+    <nav class="nav2">
+        <a href="https://api.whatsapp.com/send?phone=34662266762" class="a1">
+        <img src="img/whats.png" alt="">Whatsapp
+        </a>
+        <a href="mailto:danielkarimdiazpachealahmad@gmail.com" class="a2">
+        <img src="img/5847fafdcef1014c0b5e48ce.png" alt="">Email
+        </a>
+        <a href="https://twitter.com/DanielK86135216?t=A-eEAtwzhsvelzXkgEKemA&s=08"class="a3">
+        <img src="img/twiiter.png" alt="">Twitter
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-diaz-pache-software-engineering/" class="a4">
+        <img src="img/LI-In-Bug.png" alt="linkedin">Linkedin
+        </a>
+    </nav>
+</section>
+<!-- fin seccion 5 -->
+<!-- footer -->
+<footer class="footer">
+    <p>Made by Syrian Hands with Love</p>
+</footer>
+<!-- fin footer -->
+<!-- back to top -->
+    <a href="#" class="backTo">
+        <i class="fa fa-chevron-up iback"></i>
+    </a>
+<!-- fin back to top -->
+</div>
+<!-- fin marco -->
+
+<!-- elementos comunes -->
+<!-- menu mob -->  
+<nav class="menuMob" id="menuMob">
+    <a href="#home" class="link" data-sec="0">Home</a>
+    <a href="#about" class="link" data-sec="1">About</a>
+    <a href="#services" class="link" data-sec="2">Services</a>
+    <a href="#portfolio" class="link" data-sec="3">Portfolio</a>
+    <a href="#contact" class="link" data-sec="4">Contact</a>
+</nav>
+<!-- fin menu mob -->
+<!-- fin elementos comunes -->
 
     <!-- JS Font Awesome -->
     <script src="https://kit.fontawesome.com/b599c0549b.js" crossorigin="anonymous"></script>
     <!-- JS Framework -->
     <script src="js/jquery36.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/mainvainilla.js"></script>
     <!-- flickity -->
     <script src="js/flickity.pkgd.js"></script>
     <!-- JS Propio -->
     <script src="js/main.js"></script>
+   
 </body>
 </html>
